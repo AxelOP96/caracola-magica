@@ -8,13 +8,16 @@ body{
     margin:0;
     padding:0;
     display:flex;
-    background: linear-gradient(135deg, #7c1599, #921099 48%, #7e4ae8 100%);
+    background: #d694d5;
     background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     align-items:center;
     justify-content:center;
 }
 
 .player{
+    display: none;
     max-width:750px;
     border: 5px solid rgba(0,0,0,0.2);
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
