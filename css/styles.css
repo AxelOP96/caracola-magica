@@ -131,3 +131,16 @@ input[type=range]::-moz-range-thumb {
     width: auto;
     height:700px;
 }*/
+
+#answer{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(118, 184, 118);
+    color: white;
+}
+#answer:hover{
+    transform: scale(1.2);
+    color: black;
+}

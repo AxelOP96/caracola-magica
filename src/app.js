@@ -20,3 +20,14 @@ video.addEventListener('pause', updateButton);
 toggle.addEventListener('click', togglePlay);
 
 const answers = ['Probablemente','No...','Seguro que si','Pregunta otra vez','Tal vez','Como yo lo veo, sí',' Sin lugar a dudas','Puedes confiar en ello.','Es lo más probable','Las señales apuntan a que sí','Mejor no decirte ahora.','Vuelve a preguntar más tarde','Respuesta confusa, vuelve a intentarlo','No cuentes con ello','Mis fuentes dicen que no','Muy dudoso','Mi respuesta es no','Las perspectivas no son muy buenas','Concéntrate y vuelve a preguntar'];
+
+const btn = document.querySelector("#answer");
+const place = document.querySelector("#speech");
+
+btn.addEventListener("click", ()=>{
+    let limit = answers.length;
+    let random = Math.round(Math.random()*limit)
+    console.log(random);
+    
+    place.innerHTML = answers[random];
+})
