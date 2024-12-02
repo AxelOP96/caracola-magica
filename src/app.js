@@ -26,7 +26,7 @@ const place = document.querySelector("#speech");
 
 btn.addEventListener("click", ()=>{
     let limit = answers.length;
-    let random = Math.round(Math.random()*limit)
+    let random = Math.round(Math.random()*(limit-1))
     console.log(random);
     
     place.innerHTML = answers[random];

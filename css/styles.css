@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 html{
     box-sizing:border-box;
 }
@@ -5,9 +6,11 @@ html{
     box-sizing:inherit;
 }
 body{
+    font-family: "Montserrat", sans-serif;
     margin:0;
     padding:0;
     display:flex;
+    flex-direction: column;
     background: #d694d5;
     background-size:cover;
     background-position: center;
@@ -15,7 +18,12 @@ body{
     align-items:center;
     justify-content:center;
 }
-
+.caracola{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
 .player{
     display: none;
     max-width:750px;
@@ -143,4 +151,7 @@ input[type=range]::-moz-range-thumb {
 #answer:hover{
     transform: scale(1.2);
     color: black;
+}
+.logo{
+    border-radius: 50%;
 }
